@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="gfFrLgz-oT5BrATi_rAzRPae-bWt_knjpt_ycPOb1tw" />
+
+  <!-- Primary SEO -->
+  <!-- Title carries BOTH search vocabularies. Google Search Console shows the
+       "preview / previewer / viewer / tester" cluster is ~64% of impressions and
+       "maker / editor / creator" only ~28%, so preview leads and maker follows.
+       57 characters. Keep any rewrite under ~60 or Google truncates it. -->
+  <title>Roblox Clothing Preview &amp; Template Maker | Free 3D Viewer</title>
+  <meta name="description" content="Free Roblox clothing previewer and template maker. Design shirts and pants, or import a template you have, and test them on a 3D avatar before uploading." />
+  <meta name="author" content="Clothing Studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <link rel="canonical" href="https://random-cactus.github.io/" />
+  <meta name="theme-color" content="#ff5aa0" />
+
+  <!-- Installable web app. Linked here too so a visitor can install straight from
+       the landing page; start_url points at rbx.html, so either entry point gives
+       a home-screen icon that opens the editor. -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Clothing Studio" />
+
+  <!-- LCP is the hero screenshot; preload it and warm the analytics host early. -->
+  <link rel="preload" as="image" href="screenshot.jpg" fetchpriority="high" />
+  <link rel="dns-prefetch" href="//gc.zgo.at" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Clothing Studio" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Roblox Clothing Preview &amp; Template Maker | Free 3D Viewer" />
+  <meta property="og:description" content="Design Roblox shirts and pants, or import a template you already have, and see it live on a 3D avatar. Test your clothing before you pay to upload it." />
+  <meta property="og:url" content="https://random-cactus.github.io/" />
+  <meta property="og:image" content="https://random-cactus.github.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Clothing Studio: free Roblox clothing previewer and template maker with a live 3D avatar viewer" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Roblox Clothing Preview &amp; Template Maker | Free 3D Viewer" />
+  <meta name="twitter:description" content="Design Roblox shirts and pants, or import a template you already have, and test it on a live 3D avatar. Free and online." />
+  <meta name="twitter:image" content="https://random-cactus.github.io/og-image.png" />
+  <meta name="twitter:image:alt" content="The Clothing Studio editor with a 2D shirt template and a 3D avatar preview" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff5aa0'/%3E%3Cpath d='M12 5.5 L7.5 8 L4.5 13 L8.5 16 L10 14.5 L10 26.5 L22 26.5 L22 14.5 L23.5 16 L27.5 13 L24.5 8 L20 5.5 C18.5 8.5 13.5 8.5 12 5.5 Z' fill='%23ffffff'/%3E%3Cpath d='M16 18.4 C15.1 16.9 12.6 17.4 12.6 19.5 C12.6 21.3 16 23.2 16 23.2 C16 23.2 19.4 21.3 19.4 19.5 C19.4 17.4 16.9 16.9 16 18.4 Z' fill='%23ff5aa0'/%3E%3C/svg%3E" />
+
+  <!-- Structured data: the app itself -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Clothing Studio",
+    "alternateName": ["Roblox Clothing Previewer", "Roblox Clothing Template Maker"],
+    "url": "https://random-cactus.github.io/",
+    "description": "A free online Roblox clothing previewer and template maker. Design shirts and pants with a layered 2D painter, or import a template you already have, and view it live on a 3D R15 avatar before uploading to Roblox.",
+    "applicationCategory": "DesignApplication",
+    "operatingSystem": "Any (modern web browser with WebGL)",
+    "browserRequirements": "Requires JavaScript and WebGL",
+    "isAccessibleForFree": true,
+    "image": "https://random-cactus.github.io/og-image.png",
+    "screenshot": "https://random-cactus.github.io/screenshot.jpg",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "featureList": [
+      "Layered 2D clothing template painter",
+      "Live 3D R15 avatar preview",
+      "Preview an existing 585x559 clothing template on a 3D avatar",
+      "Test shirts and pants before paying the Roblox upload fee",
+      "Roblox shirt and pants templates at 585x559",
+      "Brush, line, fill, text, stamp, gradient, pattern and image tools",
+      "Fabric shading templates",
+      "Paint directly on the 3D model",
+      "Symmetry painting and pixel mode",
+      "Multiple avatar body types plus custom .obj upload",
+      "Export a PNG template ready to upload to Roblox",
+      "Save and load projects in your browser"
+    ]
+  }
+  </script>
+  <!-- Structured data: the how-to, mirroring the visible steps below -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to make a Roblox shirt",
+    "description": "Design a Roblox Classic shirt or pants template in your browser and export a PNG ready to upload to Roblox.",
+    "totalTime": "PT10M",
+    "supply": [{ "@type": "HowToSupply", "name": "A web browser" }],
+    "tool": [{ "@type": "HowToTool", "name": "Clothing Studio" }],
+    "step": [
+      { "@type": "HowToStep", "name": "Open the editor", "text": "Open Clothing Studio in your browser and choose the shirt or the pants template. Nothing to download or install.", "url": "https://random-cactus.github.io/#how-to" },
+      { "@type": "HowToStep", "name": "Block in your base colour", "text": "Use the fill tool to set the base colour of the whole garment, then add a new layer for the details so the base stays editable.", "url": "https://random-cactus.github.io/#how-to" },
+      { "@type": "HowToStep", "name": "Add your design", "text": "Paint with the brush, add text or a logo, import an image, or drop in a gradient or pattern. Each element can live on its own layer.", "url": "https://random-cactus.github.io/#how-to" },
+      { "@type": "HowToStep", "name": "Check it on the 3D avatar", "text": "Rotate the live 3D R15 mannequin to check seams and placement, and fix anything that does not line up across the template faces.", "url": "https://random-cactus.github.io/#how-to" },
+      { "@type": "HowToStep", "name": "Add fabric shading", "text": "Apply a shading template to add folds and depth so the clothing does not look flat, then adjust its layer opacity to taste.", "url": "https://random-cactus.github.io/#how-to" },
+      { "@type": "HowToStep", "name": "Export and upload", "text": "Export the PNG template, then upload it to Roblox as Classic Clothing from the Roblox Creator Hub.", "url": "https://random-cactus.github.io/#how-to" }
+    ]
+  }
+  </script>
+  <!-- Structured data: FAQ, mirroring the visible answers below -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is Clothing Studio free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Clothing Studio is 100% free and runs entirely in your browser. There is no sign-up, no download, and no watermark on the template you export." } },
+      { "@type": "Question", "name": "Do I need to download or install anything?", "acceptedAnswer": { "@type": "Answer", "text": "No. It is a web app that works in any modern browser such as Chrome, Edge, Firefox or Safari. Just open the editor and start designing." } },
+      { "@type": "Question", "name": "Can I make both Roblox shirts and pants?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can switch between the Roblox Classic shirt template and the pants template, each with its own layer stack." } },
+      { "@type": "Question", "name": "What size is a Roblox clothing template?", "acceptedAnswer": { "@type": "Answer", "text": "Roblox Classic shirt and pants templates are 585 by 559 pixels. Clothing Studio works at exactly that size and exports a PNG at those dimensions, so nothing is rescaled on the way to Roblox." } },
+      { "@type": "Question", "name": "Can I preview my clothing on a 3D avatar?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A live 3D R15 mannequin updates as you paint, so you see exactly how your design wraps around the body. Several body types are included and you can paint directly onto the model." } },
+      { "@type": "Question", "name": "Can I preview a shirt template I already have?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Use Import Full Template to load an existing 585 by 559 PNG and it appears on the 3D avatar straight away. You do not have to draw anything, so Clothing Studio works as a plain Roblox clothing viewer if all you want is to check a template someone sent you or one you made in another program." } },
+      { "@type": "Question", "name": "How can I test a Roblox shirt without uploading it?", "acceptedAnswer": { "@type": "Answer", "text": "Preview it here first. Roblox only shows a Classic shirt on an avatar once you have paid to upload it, and Roblox Studio needs an asset ID for the same reason, so the usual way to test a design costs Robux every attempt. Clothing Studio maps your template onto a real 3D R15 mannequin using the same UV layout Roblox uses, so you can rotate it, check the seams and catch an upside-down sleeve before you spend anything." } },
+      { "@type": "Question", "name": "How do I upload my design to Roblox?", "acceptedAnswer": { "@type": "Answer", "text": "Export the PNG from Clothing Studio, then upload it as Classic Clothing from the Roblox Creator Hub. Roblox charges its own upload fee in Robux and sets its own moderation and selling requirements, so check the current rules there before you upload." } },
+      { "@type": "Question", "name": "Does it work on a phone, tablet or Chromebook?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It runs in the browser on phones, tablets and Chromebooks as well as on Windows and Mac. A larger screen or a stylus makes detailed work easier, and you can minimise panels to free up room." } },
+      { "@type": "Question", "name": "Why does my shirt look blurry or stretched in Roblox?", "acceptedAnswer": { "@type": "Answer", "text": "That usually means the image was resized somewhere. Design and export at the native 585 by 559 template size, avoid scaling the PNG afterwards, and use the 3D preview to catch artwork that runs across a seam between two template faces." } },
+      { "@type": "Question", "name": "Does this work for R6 and R15 avatars?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Classic shirts and pants use the same template for both body types, so a design made here works on R6 and R15 avatars. The preview mannequin is R15." } },
+      { "@type": "Question", "name": "Are my designs saved if I close the tab?", "acceptedAnswer": { "@type": "Answer", "text": "Your work is stored in your own browser, and you can save named projects and reopen them later. Nothing is uploaded to a server, so clearing your browser data or switching device or browser will not carry the designs with you. Export a PNG for anything you want to keep permanently." } },
+      { "@type": "Question", "name": "What is the difference between Classic Clothing and UGC or layered clothing?", "acceptedAnswer": { "@type": "Answer", "text": "Classic Clothing - shirts, pants and t-shirts - is a flat 585 by 559 image painted onto the avatar's existing body, and that is what Clothing Studio makes. Layered (UGC) clothing is a separate system: real 3D garments modelled in software such as Blender, rigged and fitted so they sit on top of the body. If you want to design clothing by drawing rather than by 3D modelling, Classic Clothing is the one you want, and it still works on every avatar." } },
+      { "@type": "Question", "name": "Can I use this instead of Photoshop, GIMP or Paint.NET?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and it is usually easier for this specific job. General image editors do not know the Roblox template, so you have to find the UV layout yourself, guess where the seams fall, and re-upload to Roblox every time you want to see the result. Clothing Studio starts from the correct 585 by 559 layout with the gutters masked off, and shows the wrapped result on a 3D avatar as you paint, while still giving you layers, blend modes and undo." } },
+      { "@type": "Question", "name": "How much does it cost to upload clothing to Roblox?", "acceptedAnswer": { "@type": "Answer", "text": "Clothing Studio is free, but Roblox charges its own fee in Robux to publish a Classic Clothing item, and selling clothing has additional requirements on their side. Those numbers and rules are set by Roblox and change from time to time, so check the current terms on the Roblox Creator Hub before you upload." } },
+      { "@type": "Question", "name": "Why was my shirt rejected by Roblox moderation?", "acceptedAnswer": { "@type": "Answer", "text": "Roblox reviews every uploaded item against its community standards, and rejections are usually about the artwork itself: copyrighted logos or characters, real-world brands, text, or anything suggestive or violent. Original artwork with no text and no borrowed logos passes most reliably. Moderation is entirely Roblox's decision; nothing in this editor affects it." } },
+      { "@type": "Question", "name": "Can I make a hoodie, jacket or suit?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, as a Classic shirt. You are painting the illusion of a garment onto the avatar's torso and arms, so a hoodie is drawn: sleeves and body in the fabric colour, then a drawstring, a pocket outline and a hood shape at the neckline. The fabric shading templates do most of the heavy lifting for folds and depth, and the 3D preview is what tells you whether the seams line up." } },
+      { "@type": "Question", "name": "Can I make a dress?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, as a Classic shirt and pants pair. A dress is drawn as a bodice on the shirt template and a skirt on the upper legs of the pants template, with the two meeting at the waist. Design both in the same session, switch between them with the garment selector, and use the 3D preview to line the waistline up so the join does not show." } },
+      { "@type": "Question", "name": "Does Clothing Studio work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Partly. You can install it to your home screen or desktop, and your saved designs live in the browser, but the 3D preview loads its graphics library from the internet, so a first load needs a connection. Treat it as an online tool." } }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #ffe6eb; --panel: #ffffff; --panel2: #fff0f5; --line: #ffc2d1;
+      --text: #4a4a4a; --muted: #8c727b; --accent2: #ff5aa0; --accent3: #ff6699;
+      --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background:
+        radial-gradient(1100px 700px at 100% -20%, #ffd6e4 0%, rgba(255,214,228,0) 55%),
+        linear-gradient(180deg, #ffe6eb 0%, #fff0f5 100%);
+      color: var(--text); font-family: var(--sans); line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent2); }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+    header.site {
+      display: flex; align-items: center; justify-content: space-between; gap: 14px;
+      padding: 18px 22px; max-width: 1080px; margin: 0 auto; flex-wrap: wrap;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 900; font-size: 22px; color: #3a2b30; }
+    .brand svg { width: 34px; height: 34px; }
+    .btn {
+      display: inline-block; background: var(--accent2); color: #fff; font-weight: 800;
+      text-decoration: none; padding: 13px 26px; border-radius: 14px; font-size: 17px;
+      box-shadow: 0 10px 26px rgba(255,90,160,.35); transition: transform .12s ease, box-shadow .12s ease;
+      border: none; cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 32px rgba(255,90,160,.45); }
+    .btn.ghost { background: #fff; color: var(--accent2); border: 2px solid var(--line); box-shadow: none; }
+
+    nav.toc { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,.55); }
+    nav.toc ul { display: flex; flex-wrap: wrap; gap: 4px 26px; justify-content: center; list-style: none; margin: 0; padding: 12px 22px; }
+    nav.toc a { color: #6b5560; text-decoration: none; font-weight: 700; font-size: 15px; }
+    nav.toc a:hover { color: var(--accent2); }
+
+    .hero { text-align: center; padding: 36px 0 18px; }
+    .eyebrow { color: var(--accent3); font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; font-size: 14px; }
+    h1 { font-size: clamp(34px, 6vw, 60px); line-height: 1.05; font-weight: 900; color: #3a2b30; margin: 12px 0 14px; }
+    h1 .pink { color: var(--accent2); }
+    .lede { font-size: clamp(17px, 2.4vw, 21px); color: #5d4853; max-width: 720px; margin: 0 auto 26px; }
+    .cta-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .trust { margin-top: 16px; color: var(--muted); font-size: 14px; font-weight: 600; }
+
+    .shot { margin: 34px auto 0; max-width: 980px; }
+    .shot img {
+      width: 100%; height: auto; display: block; border-radius: 18px;
+      border: 1px solid var(--line); box-shadow: 0 24px 60px rgba(255,120,165,.30);
+    }
+
+    section { padding: 46px 0; }
+    h2 { font-size: clamp(26px, 4vw, 36px); font-weight: 900; color: #3a2b30; text-align: center; margin: 0 0 8px; }
+    .sub { text-align: center; color: var(--muted); max-width: 680px; margin: 0 auto 30px; }
+    .prose { max-width: 760px; margin: 0 auto; }
+    .prose p { color: #5d4853; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+    .card {
+      background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 22px;
+      box-shadow: 0 8px 24px rgba(255,150,180,.14);
+    }
+    .card .ic {
+      width: 30px; height: 30px; display: block;
+      stroke: var(--accent2); fill: none;
+      stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round;
+    }
+    .card h3 { margin: 10px 0 6px; font-size: 19px; color: #3a2b30; }
+    .card p { margin: 0; color: #6b5560; font-size: 15px; }
+
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px 18px; counter-reset: s; list-style: none; padding: 0; margin: 26px 0 0; }
+    .step { background: var(--panel2); border: 1px solid var(--line); border-radius: 16px; padding: 22px; position: relative; }
+    .step::before {
+      counter-increment: s; content: counter(s); position: absolute; top: -16px; left: 20px;
+      width: 34px; height: 34px; background: var(--accent2); color: #fff; border-radius: 50%;
+      display: grid; place-items: center; font-weight: 900; box-shadow: 0 6px 16px rgba(255,90,160,.4);
+    }
+    .step h3 { margin: 8px 0 6px; color: #3a2b30; font-size: 18px; }
+    .step p { margin: 0; color: #6b5560; font-size: 15px; }
+
+    /* "At a glance": a compact, self-contained fact list. Deliberately plain
+       key/value prose: it is the block that search engines and AI assistants
+       quote when someone asks what the tool is or what size a template is. */
+    .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 26px; margin: 0; max-width: 900px; margin-inline: auto; }
+    .facts > div { display: flex; gap: 10px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+    .facts dt { font-weight: 800; color: #3a2b30; margin: 0; flex: 0 0 128px; font-size: 15px; }
+    .facts dd { margin: 0; color: #6b5560; font-size: 15px; }
+
+    .spec { width: 100%; border-collapse: collapse; background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); font-size: 15px; }
+    .spec caption { caption-side: bottom; color: var(--muted); font-size: 13px; padding-top: 10px; text-align: left; }
+    .spec th, .spec td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+    .spec thead th { background: var(--panel2); color: #3a2b30; font-size: 14px; }
+    .spec tr:last-child td { border-bottom: none; }
+    .table-scroll { overflow-x: auto; }
+
+    .tips { max-width: 760px; margin: 0 auto; padding: 0; list-style: none; }
+    .tips li { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin-bottom: 12px; color: #6b5560; }
+    .tips strong { color: #3a2b30; }
+
+    .faq { max-width: 760px; margin: 0 auto; }
+    details {
+      background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 4px 18px; margin-bottom: 12px;
+    }
+    summary { cursor: pointer; font-weight: 800; color: #3a2b30; padding: 14px 0; list-style: none; font-size: 17px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; float: right; color: var(--accent2); font-weight: 900; }
+    details[open] summary::after { content: "−"; }
+    details p { margin: 0 0 16px; color: #6b5560; }
+
+    .final { text-align: center; background: #fff; border: 1px solid var(--line); border-radius: 22px; padding: 44px 22px; box-shadow: 0 16px 44px rgba(255,150,180,.18); }
+    .final h2 { margin-bottom: 10px; }
+
+    footer { text-align: center; color: var(--muted); font-size: 14px; padding: 30px 22px 50px; }
+    footer a { font-weight: 700; }
+    footer .updated { font-size: 13px; opacity: .85; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#ff5aa0" /><path d="M12 5.5 L7.5 8 L4.5 13 L8.5 16 L10 14.5 L10 26.5 L22 26.5 L22 14.5 L23.5 16 L27.5 13 L24.5 8 L20 5.5 C18.5 8.5 13.5 8.5 12 5.5 Z" fill="#fff" /><path d="M16 18.4 C15.1 16.9 12.6 17.4 12.6 19.5 C12.6 21.3 16 23.2 16 23.2 C16 23.2 19.4 21.3 19.4 19.5 C19.4 17.4 16.9 16.9 16 18.4 Z" fill="#ff5aa0" /></svg>
+      Clothing Studio
+    </div>
+    <a class="btn" href="rbx.html">Open the editor</a>
+  </header>
+
+  <nav class="toc" aria-label="Page sections">
+    <ul>
+      <li><a href="#at-a-glance">At a glance</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#preview">Preview &amp; test</a></li>
+      <li><a href="#how-to">How to make a shirt</a></li>
+      <li><a href="#template">Template size</a></li>
+      <li><a href="#tips">Tips</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Roblox Classic Clothing Previewer &amp; Designer</p>
+        <h1>Free <span class="pink">Roblox Clothing</span> Preview &amp; Template Maker</h1>
+        <p class="lede">Design Roblox shirts and pants in a layered, Photoshop-style painter, or <strong>import a template you already have</strong>, and see it <strong>live on a 3D avatar</strong>. Test your clothing before you spend a single Robux uploading it.</p>
+        <div class="cta-row">
+          <a class="btn" href="rbx.html">Launch the editor, it's free</a>
+          <a class="btn ghost" href="#how-to">How it works</a>
+        </div>
+        <p class="trust">No download · No sign-up · Runs in your browser</p>
+        <div class="shot">
+          <img src="screenshot.jpg" width="1600" height="1000" alt="Clothing Studio editor: a 2D Roblox shirt template with a tool rail and layers panel, and a live 3D R15 avatar preview on the right." loading="eager" fetchpriority="high" />
+        </div>
+      </div>
+    </section>
+
+    <section id="at-a-glance">
+      <div class="wrap">
+        <h2>Clothing Studio at a glance</h2>
+        <p class="sub">The short version, if you just want the facts.</p>
+        <dl class="facts">
+          <div><dt>What it is</dt><dd>A free online editor for Roblox Classic clothing: shirts and pants.</dd></div>
+          <div><dt>Template size</dt><dd>585 × 559 pixels, exported as a PNG at native size.</dd></div>
+          <div><dt>Price</dt><dd>Free, with no account, no watermark and no ads.</dd></div>
+          <div><dt>Install</dt><dd>None. It runs in the browser, and can be added to a home screen.</dd></div>
+          <div><dt>3D preview</dt><dd>Live R15 mannequin, four body types, or upload your own <code>.obj</code>.</dd></div>
+          <div><dt>Works on</dt><dd>Windows, Mac, Chromebook, Android and iOS browsers.</dd></div>
+          <div><dt>Avatar types</dt><dd>The same template covers both R6 and R15.</dd></div>
+          <div><dt>Your files</dt><dd>Saved in your own browser. Nothing is uploaded to a server.</dd></div>
+          <div><dt>Preview only?</dt><dd>Yes. Import an existing template and view it on the avatar without drawing anything.</dd></div>
+          <div><dt>Test before upload</dt><dd>Check seams and placement on the 3D model before paying Roblox's upload fee.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <h2>Everything you need to design Roblox clothes</h2>
+        <p class="sub">A full clothing studio in your browser, built for Roblox Classic shirt and pants templates.</p>
+        <div class="grid">
+          <div class="card"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="4.6" r="2.4"/><path d="M12 7.6v8"/><path d="M7.4 10.2h9.2"/><path d="M12 15.6l-2.6 4.8M12 15.6l2.6 4.8"/></svg><h3>Live 3D preview</h3><p>A real-time R15 mannequin shows exactly how your design wraps around the avatar as you paint. Spin it, reset the view, switch body types, or paint straight onto the model.</p></div>
+          <div class="card"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.4l8.6 4.6L12 12.6 3.4 8z"/><path d="M3.4 12.4L12 17l8.6-4.6"/><path d="M3.4 16.8L12 21.4l8.6-4.6"/></svg><h3>Layers &amp; blend modes</h3><p>Work like a pro with a full layer stack, opacity, blend modes, and unlimited undo/redo, for non-destructive editing for shirts and pants.</p></div>
+          <div class="card"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.4 3.8l5.8 5.8-8.6 8.6-5.8-5.8z"/><path d="M6 12.6c-1.8 1.8-1.4 5.6-3.4 7.6 2.8.6 5.8-.2 7.6-2"/></svg><h3>Powerful tools</h3><p>Brush, line, fill, eraser, text, stamps, gradients, patterns, smudge, blur, colour replace, image import and a selection tool with copy, cut and paste.</p></div>
+          <div class="card"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.2l1.9 5.2 5.2 1.9-5.2 1.9L12 17.4l-1.9-5.2L4.9 10.3l5.2-1.9z"/><path d="M18.6 15.4l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg><h3>Fabric shading</h3><p>One-click fabric shading templates add realistic folds, drape and texture so your clothing looks hand-finished instead of flat.</p></div>
+          <div class="card"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 3.6L4.2 6l-1.6 4.4 3.4 1.6L7 10.6v9.8h10v-9.8l1 1.4 3.4-1.6L19.8 6 15 3.6a3.2 3.2 0 0 1-6 0z"/></svg><h3>Shirts &amp; pants</h3><p>Switch between Roblox Classic shirt and pants templates, each with its own layers, on the correct 585×559 UV layout with the gutters masked off.</p></div>
+          <div class="card"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 14.5V4"/><path d="M8 7.5l4-4 4 4"/><path d="M4.5 19.5h15"/></svg><h3>Export &amp; upload</h3><p>Export a clean PNG template ready to upload to Roblox, and save your projects in the browser to keep editing later.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The preview/viewer/tester job-to-be-done. Search Console shows this is
+         where most demand actually is, and the old page only ever pitched
+         "make one from scratch", so importing a finished template and just
+         looking at it, which the editor has always supported, was invisible. -->
+    <section id="preview">
+      <div class="wrap">
+        <h2>Preview and test your clothing before you upload</h2>
+        <p class="sub">You do not have to design anything. Clothing Studio works as a plain Roblox clothing previewer too.</p>
+        <div class="prose">
+          <p>Roblox will not show you a Classic shirt on an avatar until you have paid to upload it, and Roblox Studio needs an asset ID for the same reason, so the normal way to test a design costs Robux every single attempt. That is the problem this tool was built around.</p>
+          <p>Already have a template? Use <strong>Import Full Template</strong> to drop your finished 585 × 559 PNG straight in, and it appears on the mannequin immediately. From there it is a <strong>3D shirt viewer</strong>: rotate the avatar, switch body types, and see the flat 2D rectangles wrapped exactly the way Roblox will wrap them.</p>
+        </div>
+        <ul class="tips">
+          <li><strong>A clothing tester that costs nothing.</strong> Check a shirt or pants design as many times as you like without spending Robux, and only upload once you are happy with it.</li>
+          <li><strong>Works for R6 and R15.</strong> Classic clothing shares one template across both, so what the R15 mannequin shows you is what either body type will wear.</li>
+          <li><strong>A 2D to 3D visualizer.</strong> The template is a flattened UV map, not a picture of a shirt. Seeing it on a body is the only reliable way to tell that a logo landed on the back or a sleeve went on upside-down.</li>
+          <li><strong>Preview someone else's template.</strong> Bought or downloaded a template and want to know what it actually looks like? Import it and spin it round before you commit.</li>
+          <li><strong>Your own body model.</strong> Four mannequins are built in, and you can upload a custom <code>.obj</code> if you want to check the fit on a specific rig.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="how-to">
+      <div class="wrap">
+        <h2>How to make a Roblox shirt</h2>
+        <p class="sub">No experience needed. Most people finish their first outfit in under ten minutes.</p>
+        <ol class="steps">
+          <li class="step">
+            <h3>Open the editor</h3>
+            <p>Launch Clothing Studio and pick the shirt or pants template. There is nothing to download, and no account to make.</p>
+          </li>
+          <li class="step">
+            <h3>Block in a base colour</h3>
+            <p>Use the fill tool to set the colour of the whole garment first, then add a new layer for detail so the base stays editable underneath.</p>
+          </li>
+          <li class="step">
+            <h3>Add your design</h3>
+            <p>Paint with the brush, add text or a logo, import an image, or drop in a gradient or pattern. Give each element its own layer so you can move it later.</p>
+          </li>
+          <li class="step">
+            <h3>Check it in 3D</h3>
+            <p>Rotate the live avatar to check seams and placement. Anything that crosses between two template faces is easiest to fix here.</p>
+          </li>
+          <li class="step">
+            <h3>Add fabric shading</h3>
+            <p>Apply a shading template for folds and depth, then dial its layer opacity down until it looks natural rather than painted on.</p>
+          </li>
+          <li class="step">
+            <h3>Export and upload</h3>
+            <p>Export the PNG and upload it to Roblox as Classic Clothing from the <a href="https://create.roblox.com/" rel="noopener">Roblox Creator Hub</a>.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="template">
+      <div class="wrap">
+        <h2>The Roblox clothing template, explained</h2>
+        <p class="sub">If you have ever wondered why Roblox templates look like a scattered pile of rectangles, this is why.</p>
+        <div class="prose">
+          <p>A Roblox Classic shirt or pants template is a single <strong>585 × 559 pixel</strong> image. It is not a picture of a shirt. It is a flattened <em>UV map</em>: the avatar's body parts unwrapped into boxes and laid flat, so every rectangle is one face of one body part.</p>
+          <p>A shirt unwraps three boxes: the torso and both arms. Pants unwrap the hips and both legs. Each box contributes six faces, which is why there are <strong>18 paintable rectangles</strong> on a template. Roblox wraps the image back around the avatar at upload time, so artwork that spans two rectangles has to line up at the shared edge or it will show a visible seam.</p>
+          <div class="table-scroll">
+            <table class="spec">
+              <caption>Clothing Studio masks the gutters between faces automatically, so you cannot accidentally paint in the dead space.</caption>
+              <thead><tr><th scope="col">Part of the template</th><th scope="col">What it covers</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Canvas size</th><td>585 × 559 pixels, PNG, transparency supported</td></tr>
+                <tr><th scope="row">Torso box (shirt)</th><td>Chest, back, both sides, shoulders and the underside: 6 faces</td></tr>
+                <tr><th scope="row">Arm boxes (shirt)</th><td>Left and right sleeves, 6 faces each</td></tr>
+                <tr><th scope="row">Hip box (pants)</th><td>The waist and seat section above the legs: 6 faces</td></tr>
+                <tr><th scope="row">Leg boxes (pants)</th><td>Left and right legs, 6 faces each</td></tr>
+                <tr><th scope="row">Gutters</th><td>The gaps between rectangles. Roblox ignores them, so nothing painted there appears on the avatar</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Because the preview here is a real 3-D model using the same UV layout, what you see on the mannequin is what Roblox will render, which is the fastest way to catch a sleeve that is upside-down or a logo that lands on the avatar's back.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips">
+      <div class="wrap">
+        <h2>Tips for better-looking Roblox clothing</h2>
+        <p class="sub">Small things that separate a first attempt from something people actually wear.</p>
+        <ul class="tips">
+          <li><strong>Work at native size.</strong> Design and export at 585 × 559 and never rescale the PNG afterwards. Almost every "why is my shirt blurry" problem is a resize.</li>
+          <li><strong>Use layers for anything you might move.</strong> A logo on its own layer takes two seconds to reposition; a logo painted into the base colour means starting over.</li>
+          <li><strong>Mind the seams.</strong> Stripes and patterns that cross from the torso onto an arm need to meet at the boundary. Rotate the 3D preview before you commit.</li>
+          <li><strong>Shading last, opacity low.</strong> Add a fabric shading layer on top of the finished design and pull the opacity back. Heavy shading reads as dirt rather than fabric.</li>
+          <li><strong>Symmetry mode for anything paired.</strong> Sleeves, pockets and trims stay identical without painting each side twice.</li>
+          <li><strong>Import a reference.</strong> You can bring an image in as a layer, trace over it, and delete it before exporting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="wrap">
+        <h2>Why Clothing Studio?</h2>
+        <div class="prose">
+          <p class="sub">Most Roblox clothing tools are either paid, desktop-only, or flat 2D editors with no way to see the result. Clothing Studio is the rare one that is <strong>free, fully online, layered, <em>and</em> shows a live 3D preview</strong>, with built-in fabric shading. Nothing to buy, nothing to install, and your work never leaves your browser.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <h2>Frequently asked questions</h2>
+        <p class="sub">About the editor, the template format, and getting your design into Roblox.</p>
+        <div class="faq">
+          <details open><summary>Is Clothing Studio free?</summary><p>Yes. It is 100% free and runs entirely in your browser. There is no sign-up, no download, and no watermark on the template you export.</p></details>
+          <details><summary>Do I need to download or install anything?</summary><p>No. It works in any modern browser (Chrome, Edge, Firefox, Safari). Just open the editor and start designing.</p></details>
+          <details><summary>Can I make both Roblox shirts and pants?</summary><p>Yes. Switch between the Roblox Classic shirt template and the pants template, each with its own layer stack.</p></details>
+          <details><summary>What size is a Roblox clothing template?</summary><p>Roblox Classic shirt and pants templates are <strong>585 × 559 pixels</strong>. Clothing Studio works at exactly that size and exports a PNG at those dimensions, so nothing is rescaled on the way to Roblox.</p></details>
+          <details><summary>Can I preview my clothing on a 3D avatar?</summary><p>Yes. A live 3D R15 mannequin updates as you paint, so you see exactly how the design wraps around the body. Several body types are included, and you can paint directly onto the model.</p></details>
+          <details><summary>Can I preview a shirt template I already have?</summary><p>Yes. Use <strong>Import Full Template</strong> to load an existing 585 × 559 PNG and it appears on the 3D avatar straight away. You do not have to draw anything, so Clothing Studio works as a plain Roblox clothing viewer if all you want is to check a template someone sent you, or one you made in another program.</p></details>
+          <details><summary>How can I test a Roblox shirt without uploading it?</summary><p>Preview it here first. Roblox only shows a Classic shirt on an avatar once you have paid to upload it, and Roblox Studio needs an asset ID for the same reason, so the usual way to test a design costs Robux every attempt. Clothing Studio maps your template onto a real 3D R15 mannequin using the same UV layout Roblox uses, so you can rotate it, check the seams and catch an upside-down sleeve before you spend anything.</p></details>
+          <details><summary>How do I upload my design to Roblox?</summary><p>Export the PNG from Clothing Studio, then upload it as Classic Clothing from the <a href="https://create.roblox.com/" rel="noopener">Roblox Creator Hub</a>. Roblox charges its own upload fee in Robux and sets its own moderation and selling requirements, so check the current rules there before you upload.</p></details>
+          <details><summary>Does it work on a phone, tablet or Chromebook?</summary><p>Yes. It runs in the browser on phones, tablets and Chromebooks as well as on Windows and Mac. A bigger screen or a stylus makes fine detail easier, and you can minimise the panels to free up room.</p></details>
+          <details><summary>Why does my shirt look blurry or stretched in Roblox?</summary><p>That almost always means the image was resized somewhere. Design and export at the native 585 × 559 size, do not scale the PNG afterwards, and use the 3D preview to catch artwork running across a seam between two template faces.</p></details>
+          <details><summary>Does this work for R6 and R15 avatars?</summary><p>Yes. Classic shirts and pants use the same template for both body types, so a design made here works on R6 and R15. The preview mannequin is R15.</p></details>
+          <details><summary>Are my designs saved if I close the tab?</summary><p>Your work is stored in your own browser, and you can save named projects and reopen them later. Nothing is uploaded to a server, so clearing your browser data or switching browser or device will not carry your designs with you. Export a PNG for anything you want to keep permanently.</p></details>
+          <details><summary>What is the difference between Classic Clothing and UGC or layered clothing?</summary><p><strong>Classic Clothing</strong> (shirts, pants and t-shirts) is a flat 585 × 559 image painted onto the avatar's existing body, and that is what Clothing Studio makes. <strong>Layered (UGC) clothing</strong> is a separate system: real 3D garments modelled in software such as Blender, rigged and fitted so they sit on top of the body. If you want to design clothing by drawing rather than by 3D modelling, Classic Clothing is the one you want, and it still works on every avatar.</p></details>
+          <details><summary>Can I use this instead of Photoshop, GIMP or Paint.NET?</summary><p>Yes, and it is usually easier for this specific job. General image editors do not know the Roblox template, so you have to find the UV layout yourself, guess where the seams fall, and re-upload to Roblox every time you want to see the result. Clothing Studio starts from the correct 585 × 559 layout with the gutters masked off, and shows the wrapped result on a 3D avatar as you paint, while still giving you layers, blend modes and undo.</p></details>
+          <details><summary>How much does it cost to upload clothing to Roblox?</summary><p>Clothing Studio is free, but Roblox charges its own fee in Robux to publish a Classic Clothing item, and selling clothing has additional requirements on their side. Those numbers and rules are set by Roblox and change from time to time, so check the current terms on the <a href="https://create.roblox.com/" rel="noopener">Roblox Creator Hub</a> before you upload.</p></details>
+          <details><summary>Why was my shirt rejected by Roblox moderation?</summary><p>Roblox reviews every uploaded item against its community standards, and rejections are usually about the artwork itself: copyrighted logos or characters, real-world brands, text, or anything suggestive or violent. Original artwork with no text and no borrowed logos passes most reliably. Moderation is entirely Roblox's decision; nothing in this editor affects it.</p></details>
+          <details><summary>Can I make a hoodie, jacket or suit?</summary><p>Yes, as a Classic shirt. You are painting the illusion of a garment onto the avatar's torso and arms, so a hoodie is drawn: sleeves and body in the fabric colour, then a drawstring, a pocket outline and a hood shape at the neckline. The fabric shading templates do most of the heavy lifting for folds and depth, and the 3D preview is what tells you whether the seams line up.</p></details>
+          <details><summary>Can I make a dress?</summary><p>Yes, as a Classic shirt and pants pair. A dress is drawn as a bodice on the shirt template and a skirt on the upper legs of the pants template, with the two meeting at the waist. Design both in the same session, switch between them with the garment selector, and use the 3D preview to line the waistline up so the join does not show.</p></details>
+          <details><summary>Does Clothing Studio work offline?</summary><p>Partly. You can install it to your home screen or desktop, and your saved designs live in the browser, but the 3D preview loads its graphics library from the internet, so a first load needs a connection. Treat it as an online tool.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="final">
+          <h2>Make your first Roblox outfit now</h2>
+          <p class="sub" style="margin-bottom:22px">Free, online, and no account required.</p>
+          <a class="btn" href="rbx.html">Launch Clothing Studio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Clothing Studio: a free online Roblox clothing previewer and template maker with a live 3D avatar viewer.<br />
+    <a href="rbx.html">Open the editor</a></p>
+    <p class="updated">Not affiliated with or endorsed by Roblox Corporation. Last updated <time datetime="2026-08-01">1 August 2026</time>.</p>
+  </footer>
+
+  <!-- GoatCounter analytics. The landing page had none at all, so the one page
+       being optimised for search was completely unmeasured. The explicit path
+       keeps it distinct from the app, which records as /rbx.html. -->
+  <script data-goatcounter="https://rbxhtmlpreview.goatcounter.com/count"
+          data-goatcounter-settings='{"path":"/"}'
+          async src="//gc.zgo.at/count.js"></script>
+  <script>
+    // count.js is async, so queue until it lands (same trick as the editor).
+    var _q = [];
+    function ev(path, title) {
+      _q.push({ path: path, title: title, event: true });
+      flush();
+    }
+    function flush() {
+      if (!window.goatcounter || !window.goatcounter.count) return false;
+      _q.forEach(function (e) { window.goatcounter.count(e); });
+      _q = [];
+      return true;
+    }
+    if (!flush()) {
+      var t = setInterval(function () { if (flush()) clearInterval(t); }, 500);
+      setTimeout(function () { clearInterval(t); }, 15000);
+    }
+
+    // Landing -> app conversion. Fires on any CTA that opens the editor.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a[href="rbx.html"]') : null;
+      if (a) ev('launch-editor', 'Landing: launched the editor');
+    });
+
+    // ---- Which AI assistant / answer engine sent this visit? ----
+    // This page is where assistant traffic actually lands, and ChatGPT is
+    // already its single biggest referrer. GoatCounter's own referrer table
+    // split chatgpt.com over two rows and cannot see visits whose Referer was
+    // stripped but that carry ?utm_source=chatgpt.com, so record it here as one
+    // catalogued event per source. Mirrors the block in rbx.html.
+    (function () {
+      var AI = [
+        ['chatgpt', /chatgpt|openai/], ['perplexity', /perplexity/],
+        ['claude', /claude\.ai|anthropic/], ['copilot', /copilot|bing\.com/],
+        ['gemini', /gemini\.google|bard\.google/], ['grok', /grok\.com|x\.ai/],
+        ['deepseek', /deepseek/], ['you', /you\.com/], ['phind', /phind/],
+        ['poe', /poe\.com/], ['mistral', /mistral|lechat/]
+      ];
+      var q = '', r = '';
+      try { q = new URLSearchParams(location.search).get('utm_source') || ''; } catch (e) {}
+      try { r = document.referrer ? new URL(document.referrer).hostname : ''; } catch (e) {}
+      var hay = (q + ' ' + r).toLowerCase();
+      if (!hay.trim()) return;
+      for (var i = 0; i < AI.length; i++) {
+        if (AI[i][1].test(hay)) { ev('ref-ai-' + AI[i][0], 'AI referral: ' + AI[i][0]); return; }
+      }
+    })();
+  </script>
+</body>
+</html>

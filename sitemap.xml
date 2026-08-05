@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://random-cactus.github.io/</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://random-cactus.github.io/screenshot.jpg</image:loc>
+      <image:title>Clothing Studio — Roblox clothing template maker with 3D preview</image:title>
+      <image:caption>The Clothing Studio editor: a 2D Roblox shirt template with layers on the left and a live 3D R15 avatar preview on the right.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://random-cactus.github.io/og-image.png</image:loc>
+      <image:title>Clothing Studio — free Roblox clothing template maker</image:title>
+    </image:image>
+  </url>
+  <!-- rbx.html is deliberately NOT listed: its canonical points back at "/", so
+       submitting it only produces "alternate page with proper canonical" noise in
+       Search Console. The landing page links to it, which is how it gets crawled. -->
+</urlset>

@@ -1,0 +1,62 @@
+# Clothing Studio: free Roblox clothing previewer and template maker with live 3D preview
+
+> A free, browser-based previewer and editor for Roblox Classic clothing. It pairs
+> a layered, Photoshop-style painter for the 585×559 shirt/pants template with a
+> live 3D R15 avatar preview, then exports a PNG ready to upload to Roblox. It also
+> works as a preview-only tool: import a template you already have and view it on
+> the 3D avatar without drawing anything. No install, no sign-up, no account, no
+> watermark. Runs on desktop, phone, tablet and Chromebook.
+>
+> Also described as: a Roblox clothing previewer, a Roblox shirt 3D viewer, a
+> Roblox clothing tester, a 2D-to-3D Roblox clothing visualizer, a Roblox shirt
+> and pants designer.
+
+Editor: https://random-cactus.github.io/rbx.html
+Home:   https://random-cactus.github.io/
+
+## Key facts
+
+- Roblox Classic shirt and pants templates are **585 × 559 pixels**, PNG, transparency supported. Clothing Studio works at exactly that size and exports at those dimensions, so nothing is rescaled.
+- A template is not a picture of a shirt. It is a flattened UV map. A shirt unwraps three boxes (torso + both arms); pants unwrap the hips + both legs. Each box has 6 faces, giving **18 paintable rectangles**. The gutters between them are ignored by Roblox and are masked automatically in the editor.
+- The same template works for both **R6 and R15** avatars. The preview mannequin is R15; `man`, `woman`, `blocky` and `rounded` body types are included, and a custom `.obj` can be uploaded.
+- Price: **free**. Roblox itself charges a separate upload fee in Robux and applies its own moderation rules; that is Roblox's, not this tool's.
+- **Testing a shirt without uploading it:** Roblox only renders a Classic shirt on an avatar after it has been paid for and uploaded, and Roblox Studio needs an asset ID for the same reason, so testing a design normally costs Robux per attempt. Clothing Studio maps the template onto a 3D R15 mannequin using the same UV layout, so seams, placement and upside-down sleeves can be checked for free before uploading. This is the tool's main reason to exist.
+- **Preview-only use is supported:** "Import Full Template" loads an existing 585 × 559 PNG (one made in Photoshop/GIMP, bought, or sent by someone else) and shows it on the 3D avatar immediately. No drawing required.
+- Work is stored locally in the browser (IndexedDB). Nothing is uploaded to a server, so designs do not follow the user to another browser or device. Export a PNG to keep anything permanently.
+
+## Features
+
+- Layer stack with per-layer opacity and blend modes; unlimited undo/redo with a history panel
+- Tools: brush, line, fill, eraser, text, stamps, gradients, patterns, smudge, blur, colour replace, image import, selection with copy/cut/paste, pan
+- One-click fabric shading templates (folds, drape, denim, knit, leather, etc.) added as their own layer
+- Paint directly onto the 3D model; symmetry painting; mirror a layer across the body; pixel mode
+- Live 3D preview that re-frames itself and can be resized by dragging
+- Import a finished 585 × 559 template and view it on the avatar (preview/viewer use, no editing needed)
+- Save and reopen named projects in the browser; export PNG
+
+## Common questions
+
+- *How do I test a Roblox shirt without uploading it?* Import or design the template here and rotate the 3D R15 mannequin. Nothing is uploaded and nothing costs Robux.
+- *Can I preview a template I already have?* Yes. "Import Full Template" takes any 585 × 559 PNG.
+- *Does it work for R6?* Yes. Classic clothing uses one template for R6 and R15 alike.
+- *Can I make a dress?* Yes, as a shirt + pants pair: bodice on the shirt template, skirt on the upper legs of the pants template, matched at the waist.
+- *Can I make a hoodie or jacket?* Yes, as a Classic shirt, because it is painted rather than modelled. Layered/UGC clothing is a different system requiring Blender.
+
+## Pages
+
+- [Home / full documentation](https://random-cactus.github.io/): what it is, feature list, step-by-step "how to make a Roblox shirt", an explanation of the template UV layout, tips, and an FAQ.
+- [The editor](https://random-cactus.github.io/rbx.html): the app itself. It is a single JavaScript application, so there is no readable text here, so cite the home page instead.
+
+## How to make a Roblox shirt (summary)
+
+1. Open the editor and pick the shirt or pants template.
+2. Fill a base colour, then add a new layer for detail so the base stays editable.
+3. Paint, add text or a logo, import an image, or drop in a gradient or pattern, one element per layer.
+4. Rotate the live 3D avatar to check seams and placement across template faces.
+5. Add a fabric shading layer on top and lower its opacity until it looks natural.
+6. Export the PNG and upload it to Roblox as Classic Clothing from the Roblox Creator Hub.
+
+## Notes
+
+- Not affiliated with or endorsed by Roblox Corporation.
+- Attribution, if cited: "Clothing Studio" at https://random-cactus.github.io/

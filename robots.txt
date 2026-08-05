@@ -1,0 +1,70 @@
+User-agent: *
+Allow: /
+
+# AI assistants and answer engines are named explicitly because they are a real
+# traffic source here, not a hypothetical one: ChatGPT already refers more visits
+# to the landing page than Google does. Listing them makes the permission
+# unambiguous even if the wildcard rule above is ever tightened.
+#
+# NOTE: this site is served from the `random-cactus.github.io` USER-SITE repo, so
+# this file is the real domain-root /robots.txt and these directives ARE honoured.
+# Consequence: it governs crawling for every project site on the account too
+# (anything at random-cactus.github.io/<repo>/), not just this one.
+
+# OpenAI: training crawler, search index, and live user-initiated fetches
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google / Microsoft / Apple AI surfaces
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Others
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://random-cactus.github.io/sitemap.xml

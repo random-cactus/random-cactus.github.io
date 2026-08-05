@@ -1,0 +1,35 @@
+{
+  "id": "./",
+  "name": "Clothing Studio — Roblox Clothing Template Maker",
+  "short_name": "Clothing Studio",
+  "description": "Design Roblox shirts and pants with layers, brushes and fabric shading, and preview them live on a 3D avatar.",
+  "start_url": "rbx.html",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#ff5aa0",
+  "background_color": "#ffe6eb",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["graphics", "design", "entertainment"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-narrow.jpg",
+      "sizes": "780x1688",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Designing a Roblox shirt with the live 3D preview"
+    },
+    {
+      "src": "screenshot.jpg",
+      "sizes": "1600x1000",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "The Clothing Studio editor with a 2D template and a 3D avatar preview"
+    }
+  ]
+}
